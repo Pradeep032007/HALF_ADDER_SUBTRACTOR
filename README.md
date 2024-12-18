@@ -1,3 +1,12 @@
+### NAME:PRADEEP B
+
+
+### REG NUM:24900484
+
+
+### EXP 3:HALF ADDER SUBTRACTOR
+
+
 # HALF_ADDER_SUBTRACTOR
 
 Implementation-of-Half-Adder-and-Half Subtractor-circuit
@@ -34,6 +43,13 @@ Borrow = A’B
 Figure -02 HALF Subtractor
 
 **Truthtable**
+![Half Adder](https://github.com/user-attachments/assets/4b27b166-b1a6-43be-9efd-4b10cf21e8ad)
+
+
+![Half subtracter](https://github.com/user-attachments/assets/d403ac9e-42fd-4749-bb3d-752691648a76)
+
+
+
 
 **Procedure**
 
@@ -50,12 +66,78 @@ Figure -02 HALF Subtractor
 
 **Program:**
 
+i)HALF ADDER
+
+
+module ha(a,b,sum,carry);
+
+
+input a,b;
+
+
+output sum,carry;
+
+
+assign sum= (a ^ b);
+
+
+assign carry= ( a & b);
+
+
+endmodule
+
+
+
+
+
+ii)HALF SUBTRACTOR
+
+
+module hs(a,b,difference,borrow);
+
+
+input a,b;
+
+
+output difference,borrow;
+
+
+assign difference= (a ^ b);
+
+
+assign borrow= ( ~a & b);
+
+
+endmodule
+
 /* Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
 
-Developed by: RegisterNumber:*/
+Developed by:PRADEEP B
+
+
+RegisterNumber:24900484*/
 
 **RTL Schematic**
 
+
+i)HALF ADDER
+![logi diagram](https://github.com/user-attachments/assets/265aaf7f-880c-4373-8576-1e373b55d21e)
+
+
+ii)HALF SUBTRACTOR
+![logic diagram](https://github.com/user-attachments/assets/fbd43f4c-8dbc-4e28-b077-a45c545d13ef)
+
+
+
 **Output/TIMING Waveform**
 
+i)HALF ADDER
+![output](https://github.com/user-attachments/assets/2e42b844-3a64-4298-ae99-2f9d0c927c58)
+
+ii)HALF SUBTRACTOR
+![output 2](https://github.com/user-attachments/assets/9f852368-2489-4c2c-8127-84e755ee3f4d)
+
+
+
 **Result:**
+Thus the Half adder and half subtractor are verified by using verilog programm.
